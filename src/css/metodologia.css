@@ -1,0 +1,40 @@
+/* Estilos para a página Metodologia */
+#methodology {
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 20px;
+}
+
+#methodology h1 {
+    font-size: 48px;
+    color: #002b5b;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.methodology-box {
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.methodology-box h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #002b5b;
+}
+
+.methodology-box p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Responsividade */
+@media(max-width: 768px) {
+    #methodology {
+        padding: 10px;
+    }
+}

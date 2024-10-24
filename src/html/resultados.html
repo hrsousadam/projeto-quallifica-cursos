@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados - Quallifica</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/resultados.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="transparent-header">
+        <div class="logo">
+            <img src="../images/logo1.png" alt="Quallifica Cursos">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Institucional <i class="fas fa-angle-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="quem-somos.html">Quem Somos</a></li>
+                        <li><a href="metodologia.html">Metodologia</a></li>
+                        <li><a href="resultados.html">Resultados</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Modalidades de Ensino <i
+                            class="fas fa-angle-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="cursos-presenciais.html">Cursos Presenciais</a></li>
+                        <li><a href="cursos-online.html">Cursos Online</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contato</a></li>
+                <li><a href="location.html">Localização</a></li>
+                <li><a href="login.html" class="login-btn"><i class="fas fa-user"></i> Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="results">
+            <h1>Resultados e Impacto</h1>
+
+            <!-- Resultados em números -->
+            <div class="results-box">
+                <h2>Resultados em Números</h2>
+                <p>
+                    Na Quallifica Cursos, nos orgulhamos de ter capacitado milhares de alunos ao longo dos anos,
+                    ajudando-os a melhorar suas habilidades profissionais e se destacarem no mercado de trabalho. Aqui
+                    estão alguns de nossos principais resultados:
+                </p>
+                <ul class="numbers-list">
+                    <li><strong>+ 10.000</strong> Alunos treinados em Excel e Power BI</li>
+                    <li><strong>+ 200</strong> Empresas atendidas em treinamentos corporativos</li>
+                    <li><strong>+ 1500</strong> Certificados emitidos com reconhecimento de mercado</li>
+                </ul>
+            </div>
+
+            <!-- Depoimentos -->
+            <div class="results-box">
+                <h2>Depoimentos de Alunos</h2>
+                <p>
+                    A satisfação de nossos alunos é nossa maior conquista. Aqui estão alguns depoimentos de pessoas que
+                    transformaram suas carreiras com nossos cursos:
+                </p>
+
+                <div class="testimonials-carousel">
+                    <div class="testimonial active">
+                        <p><em>"O curso de Excel Avançado da Quallifica foi um divisor de águas na minha carreira.
+                                Aprendi ferramentas que uso no dia a dia e que me fizeram ganhar uma promoção!"</em></p>
+                        <p><strong>- João Silva, Analista de Dados</strong></p>
+                    </div>
+
+                    <div class="testimonial">
+                        <p><em>"Nunca imaginei que pudesse aprender Power BI tão rápido! As aulas são dinâmicas e os
+                                instrutores são excelentes. Recomendo fortemente!"</em></p>
+                        <p><strong>- Mariana Souza, Gerente de Projetos</strong></p>
+                    </div>
+
+                    <div class="testimonial">
+                        <p><em>"Os conhecimentos que adquiri na Quallifica me permitiram desenvolver relatórios mais
+                                eficazes e tomar decisões mais estratégicas para a empresa onde trabalho."</em></p>
+                        <p><strong>- Rafael Lima, Consultor Financeiro</strong></p>
+                    </div>
+
+                    <!-- Adicione mais depoimentos aqui -->
+                </div>
+            </div>
+
+            <!-- Parcerias com logos -->
+            <div class="results-box">
+                <h2>Parcerias de Sucesso</h2>
+                <p>
+                    Trabalhamos em parceria com diversas empresas para oferecer treinamentos corporativos
+                    personalizados. Nossos parceiros confiam na Quallifica para capacitar seus colaboradores e garantir
+                    o desenvolvimento contínuo das equipes.
+                </p>
+
+                <div class="partners-logos">
+                    <img src="../images/logo11.png" alt="Empresa A">
+                    <img src="../images/logo12.png" alt="Empresa B">
+                    <img src="../images/logo13.png" alt="Empresa C">
+                    <img src="../images/logo14.png" alt="Empresa D">
+                    <img src="../images/logo15.png" alt="Empresa E">
+                    <img src="../images/logo16.png" alt="Empresa F">
+                    <img src="../images/logo17.png" alt="Empresa G">
+                    <img src="../images/logo18.png" alt="Empresa H">
+                    <img src="../images/logo19.png" alt="Empresa I">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Quallifica Cursos. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- JavaScript para o carrossel de depoimentos -->
+    <script>
+        let testimonials = document.querySelectorAll('.testimonial');
+        let currentTestimonial = 0;
+
+        function showNextTestimonial() {
+            testimonials[currentTestimonial].classList.remove('active');
+            currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+            testimonials[currentTestimonial].classList.add('active');
+        }
+
+        setInterval(showNextTestimonial, 5000); // Altera a cada 5 segundos
+    </script>
+
+</body>
+
+</html>

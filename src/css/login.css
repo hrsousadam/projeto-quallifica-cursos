@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('../images/background.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.login-box .logo img {
+    width: 100px;
+    margin-bottom: 1rem;
+}
+
+.login-box h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.login-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-box label {
+    text-align: left;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.login-box input {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.login-box button {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background: #555;
+}
+
+/* Centraliza o botão e define uma largura menor */
+#google-signin-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#google-signin-btn {
+    display: inline-block;
+    background-color: #4285F4;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 250px; /* Define uma largura menor */
+    text-align: center;
+}
+
+#google-signin-btn:hover {
+    background-color: #357ae8;
+}
+
+/* Ícone do Google fora do botão, alinhado à esquerda */
+.google-icon {
+    margin-right: 10px;
+}
+
+#google-signin-btn-container img {
+    width: 20px;
+    height: 20px;
+}
+
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#password {
+    width: 100%;
+    padding-right: 40px;
+    font-size: 1rem;
+    height: auto;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.toggle-password img {
+    width: 20px;
+    height: 20px;
+}

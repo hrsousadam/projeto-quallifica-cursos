@@ -1,0 +1,171 @@
+/* Estilos principais */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #f4f4f9, #dfe9f3);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+.transparent-header {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.transparent-header.scrolled {
+    background-color: rgba(0, 43, 91, 0.95);
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center; /* Alinha verticalmente os itens */
+    gap: 20px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #002b5b;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: transparent;
+    color: #002b5b;
+    border-radius: 0;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffcc00;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul li .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li:hover .dropdown-menu {
+    display: block;
+}
+
+nav ul li .dropdown-menu li {
+    width: 200px;
+}
+
+nav ul li .dropdown-menu li a {
+    display: block;
+    padding: 10px;
+    color: #002b5b;
+    text-decoration: none;
+}
+
+nav ul li .dropdown-menu li a:hover {
+    background-color: #ffcc00;
+    color: #002b5b;
+    border-radius: 0;
+}
+
+.login-btn {
+    background-color: #ffcc00;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #002b5b;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center; /* Certifica que o ícone e o texto do botão estão alinhados */
+}
+
+.login-btn i {
+    margin-right: 8px;
+}
+
+.login-btn:hover {
+    background-color: #ffd633;
+}
+
+/* Estilo da seta nos botões drop-down */
+.arrow {
+    margin-left: 8px; /* Ajusta o espaçamento entre o texto e a seta */
+    font-size: 12px;
+}
+
+.dropdown .dropbtn {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Adiciona espaçamento entre o texto e o ícone */
+}
+
+.dropdown:hover .fa-angle-down {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: #002b5b;
+    color: #fff;
+    text-align: center;
+    padding: 16px;
+    margin-top: 50px;
+    font-size: 0.9rem;
+    width: 100%; /* Garante que ocupe 100% da largura da página */
+    position: relative; /* Remove qualquer comportamento fixo */
+}

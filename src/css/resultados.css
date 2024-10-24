@@ -1,0 +1,121 @@
+/* Estilos para a página Resultados */
+#results {
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 20px;
+}
+
+#results h1 {
+    font-size: 48px;
+    color: #002b5b;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.results-box {
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.results-box h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #002b5b;
+}
+
+.results-box p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.numbers-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.numbers-list li {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Depoimentos - Carrossel */
+.testimonials-carousel {
+    position: relative;
+    max-width: 800px;
+    margin: 20px auto;
+    overflow: hidden;
+    height: 200px;
+}
+
+.testimonial {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    text-align: center;
+    padding: 20px;
+}
+
+.testimonial.active {
+    opacity: 1;
+}
+
+.testimonial em {
+    font-size: 16px;
+    color: #555;
+}
+
+.testimonial strong {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #002b5b;
+}
+
+/* Parcerias - Grid de Logos */
+.partners-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.partners-logos img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.partners-logos img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsividade */
+@media(max-width: 768px) {
+    .testimonials {
+        flex-direction: column;
+    }
+
+    .partners-logos img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media(max-width: 480px) {
+    .partners-logos img {
+        width: 100px;
+        height: 100px;
+    }
+}

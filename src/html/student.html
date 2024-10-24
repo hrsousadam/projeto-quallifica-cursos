@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do Aluno - Quallifica Cursos</title>
+    <link rel="stylesheet" href="../css/student.css">
+    <script type="module" src="../js/student.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 id="student-name">Bem-vindo</h1>
+        <button id="logout-button" class="btn-logout">Logout</button>
+    </header>
+
+    <div class="content">
+        <nav class="sidebar">
+            <ul>
+                <li><button id="btn-profile">Perfil do Aluno</button></li>
+                <li><a href="#course-files">Arquivos do Curso</a></li>
+                <li><a href="#course-videos">Vídeos do Curso</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <section id="profile">
+                <h2>Perfil do Aluno</h2>
+                <form id="profile-form">
+                    <div class="form-group">
+                        <label for="profile-email">Email:</label>
+                        <input type="email" id="profile-email" name="profile-email" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="profile-name">Nome:</label>
+                        <input type="text" id="profile-name" name="profile-name" required>
+                    </div>
+                    <button type="submit">Atualizar Perfil</button>
+                </form>
+            </section>
+
+            <section id="course-files">
+                <h2>Arquivos do Curso</h2>
+                <ul>
+                    <li><a href="../public/pdfs/exemplo1.pdf" target="_blank">Arquivo 1</a></li>
+                    <li><a href="../public/pdfs/exemplo2.pdf" target="_blank">Arquivo 2</a></li>
+                </ul>
+            </section>
+
+            <section id="course-videos">
+                <h2>Vídeos do Curso</h2>
+                <ul>
+                    <li><a href="#">Vídeo 1</a></li>
+                    <li><a href="#">Vídeo 2</a></li>
+                </ul>
+            </section>
+        </main>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Quallifica Cursos. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
