@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Quallifica Cursos</title>
     <link rel="stylesheet" href="../css/login.css">
 </head>
-
 <body>
     <div class="login-container">
         <div class="login-box">
@@ -30,11 +28,10 @@
                 <button type="submit">Login</button>
             </form>
 
-            <!-- Container for the Google icon and button -->
+            <!-- Google Sign-In Button -->
             <div id="google-signin-btn-container">
-                <img src="../images/icon-google-3.png"
-                    alt="Google" class="google-icon">
-                <button type="button" id="google-signin-btn">Entrar com Google</button>
+                <img src="../images/icon-google-3.png" alt="Google" class="google-icon">
+                <button type="button" id="login-button">Entrar com Google</button>
             </div>
 
             <p id="message"></p>
@@ -45,16 +42,13 @@
         document.getElementById('toggle-password').addEventListener('click', function() {
             const passwordInput = document.getElementById('password');
             const icon = this.querySelector('img');
-
-            if (passwordInput.type === 'password') {
-                passwordInput.type = 'text';
-                icon.src = 'https://img.icons8.com/ios-glyphs/30/000000/invisible.png'; // Ícone de ocultar
-            } else {
-                passwordInput.type = 'password';
-                icon.src = 'https://img.icons8.com/ios-glyphs/30/000000/visible.png'; // Ícone de ver
-            }
+            passwordInput.type = passwordInput.type === 'password' ? 'text' : 'password';
+            icon.src = passwordInput.type === 'password' ? 
+                'https://img.icons8.com/ios-glyphs/30/000000/visible.png' : 
+                'https://img.icons8.com/ios-glyphs/30/000000/invisible.png';
         });
     </script>
-</body>
 
+    
+</body>
 </html>

@@ -3,61 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Área do Aluno - Quallifica Cursos</title>
+    <title>Campus Quallifica</title>
     <link rel="stylesheet" href="../css/student.css">
-    <script type="module" src="../js/student.js" defer></script>
+    <!-- Link atualizado para os ícones do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1 id="student-name">Bem-vindo</h1>
-        <button id="logout-button" class="btn-logout">Logout</button>
-    </header>
-
-    <div class="content">
-        <nav class="sidebar">
-            <ul>
-                <li><button id="btn-profile">Perfil do Aluno</button></li>
-                <li><a href="#course-files">Arquivos do Curso</a></li>
-                <li><a href="#course-videos">Vídeos do Curso</a></li>
-            </ul>
-        </nav>
-
-        <main class="main-content">
-            <section id="profile">
-                <h2>Perfil do Aluno</h2>
-                <form id="profile-form">
-                    <div class="form-group">
-                        <label for="profile-email">Email:</label>
-                        <input type="email" id="profile-email" name="profile-email" readonly>
-                    </div>
-                    <div class="form-group">
-                        <label for="profile-name">Nome:</label>
-                        <input type="text" id="profile-name" name="profile-name" required>
-                    </div>
-                    <button type="submit">Atualizar Perfil</button>
-                </form>
-            </section>
-
-            <section id="course-files">
-                <h2>Arquivos do Curso</h2>
-                <ul>
-                    <li><a href="../public/pdfs/exemplo1.pdf" target="_blank">Arquivo 1</a></li>
-                    <li><a href="../public/pdfs/exemplo2.pdf" target="_blank">Arquivo 2</a></li>
-                </ul>
-            </section>
-
-            <section id="course-videos">
-                <h2>Vídeos do Curso</h2>
-                <ul>
-                    <li><a href="#">Vídeo 1</a></li>
-                    <li><a href="#">Vídeo 2</a></li>
-                </ul>
-            </section>
-        </main>
+    <div class="top-bar">
+        <img src="../images/logo1.png" alt="Logo Quallifica" class="logo-bar">
+        <div class="profile-section">
+            <img id="user-photo" class="user-avatar" src="default-avatar.png" alt="Foto do Aluno">
+            <span id="user-name">Henrique De Sousa</span>
+        </div>
     </div>
-    
+
+    <div class="container">
+        <div class="sidebar">
+            <button id="toggle-menu" class="toggle-menu-button"><i class="fas fa-bars"></i></button>
+            <h2 class="menu-title">Menu Principal</h2>
+            <ul>
+                <li><a href="#"><i class="fas fa-play icon"></i><span>Meus cursos</span></a></li>
+                <li><a href="#"><i class="fas fa-certificate icon"></i><span>Meus certificados</span></a></li>
+                <li><a href="#"><i class="fas fa-book icon"></i><span>Tutoriais exclusivos</span></a></li>
+                <li><a href="#"><i class="fas fa-chart-line icon"></i><span>Informações e métricas</span></a></li>
+                <li><a href="#"><i class="fas fa-map icon"></i><span>Mapa de estudos</span></a></li>
+                <li><a href="#"><i class="fab fa-telegram icon"></i><span>Entrar no Telegram</span></a></li>
+                <li><a href="#"><i class="fab fa-discord icon"></i><span>Entrar no Discord</span></a></li>
+            </ul>
+            <button id="logout-button" class="logout-button"><i class="fas fa-sign-out-alt"></i><span>Sair</span></button>
+        </div>
+
+        <div class="main-content">
+            <h2 class="acesso-rapido-title">Acesso Rápido</h2>
+            <div class="quick-links">
+                <a href="#" class="quick-link">
+                    <i class="fas fa-user"></i>
+                    <span>Meu Perfil</span>
+                </a>
+                <a href="#" class="quick-link">
+                    <i class="fas fa-play"></i>
+                    <span>Meus Cursos</span>
+                </a>
+                <a href="#" class="quick-link">
+                    <i class="fas fa-certificate"></i>
+                    <span>Meus Certificados</span>
+                </a>
+                <a href="#" class="quick-link">
+                    <i class="fas fa-book"></i>
+                    <span>Tutoriais Exclusivos</span>
+                </a>
+                <a href="#" class="quick-link">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Informações e Métricas</span>
+                </a>
+                <a href="#" class="quick-link">
+                    <i class="fas fa-map"></i>
+                    <span>Mapa de Estudos</span>
+                </a>
+                <a href="#" class="quick-link">
+                    <i class="fab fa-telegram"></i>
+                    <span>Entrar no Telegram</span>
+                </a>
+                <a href="#" class="quick-link">
+                    <i class="fab fa-discord"></i>
+                    <span>Entrar no Discord</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <p>&copy; 2024 Quallifica Cursos. Todos os direitos reservados.</p>
     </footer>
+
+    <script type="module" src="../js/student.js"></script>
 </body>
 </html>
